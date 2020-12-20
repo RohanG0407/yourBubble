@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap);
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Londrina Shadow, cursive;
+  color: black;
+  margin: 0;
+  padding: 0; }
+
+#screen {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(assets/website_background.jpg); }
+
+.backbutton {
+  width: 80px;
+  height: 40px;
+  position: fixed;
+  top: 2%;
+  left: 1%;
+  z-index: 10;
+  cursor: pointer; }
+
+.mapbutton {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: fixed;
+  cursor: pointer;
+  margin-top: 5%;
+  right: 15%;
+  opacity: .5; }
+
+.riskcalcbutton {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 5%;
+  left: 15%;
+  opacity: .5; }
+
+.mapheader {
+  right: 24%;
+  position: fixed; }
+
+.riskcalcheader {
+  position: fixed;
+  left: 24%; }
+
+#screen {
+  overflow: hidden; }
+
+.topPage {
+  width: 100vw;
+  height: 100vh;
+  z-index: 3; }
+
+#info {
+  width: 70%;
+  height: 10%;
+  position: absolute;
+  /*Can also be `fixed`*/
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: auto;
+  text-align: center;
+  /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+  max-width: 100%;
+  max-height: 100%;
+  overflow: visible;
+  z-index: 3; }
+
+.header {
+  font-size: 4rem;
+  letter-spacing: .2rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 2; }
+
+#dropdown {
+  display: inline-block;
+  width: 30%;
+  position: absolute;
+  /*Can also be `fixed`*/
+  left: 0;
+  right: 0;
+  top: 45%;
+  margin: auto;
+  /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  font-size: 2rem;
+  z-index: 3; }
+
+#drophover {
+  width: 100%;
+  margin: 0 auto; }
+  #drophover p {
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: darkblue; }
+
+.dropdowncontent {
+  font-family: Londrina Solid, cursive;
+  text-align: center;
+  margin-top: 5%;
+  display: none; }
+  .dropdowncontent a {
+    margin: 2% auto;
+    padding: 12px  16px;
+    text-decoration: none;
+    display: table;
+    color: #D6CFCB; }
+
+.circle {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  border-radius: 50%; }
+
+#bubbleText {
+  width: 300px;
+  height: 75px;
+  right: 2%;
+  top: 17%;
+  position: relative; }
+
