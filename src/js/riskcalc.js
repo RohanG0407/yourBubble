@@ -145,7 +145,6 @@ export class riskcalc {
             e.preventDefault();
             let text = data.querySelector('#myInput').value
             updateInfo(college, text)
-
         })
     }
 

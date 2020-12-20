@@ -6,6 +6,7 @@ import {map} from "./map"
 import {riskcalc} from "./riskcalc"
 import {buildingNames} from "./buildingNames";
 import {pageToRiskEnter, pageToRiskLeave} from "../gsap/transitions/animation-imports";
+import {backButton} from "./backButton";
 
 barba.use(barbaPrefetch);
 
@@ -75,6 +76,9 @@ barba.init({
                 }
             },
 
+        },
+        {
+            name: "general-transitions",
             leave: ({current}) => pageToRiskLeave(current.container),
             enter(data){
                 pageToRiskEnter(data.next);
@@ -93,7 +97,7 @@ barba.init({
                 namespace: "mapt"
             },
 
-            enter(data) {
+            afterEnter(data) {
                 let prevPage = data.current.container.getElementsByTagName('label')[0].textContent
                 if(prevPage === 'UIUC') {
                     map.init(data.next.container, [-88.2272, 40.1020], true, false, 'uiuc')
@@ -102,7 +106,11 @@ barba.init({
                 } else {
                     map.init(data.next.container, [-73.6789, 42.7298], true, false, 'rpi')
                 }
-            }
+            },
+            leave: ({current}) => pageToRiskLeave(current.container),
+            enter(data){
+                pageToRiskEnter(data.next);
+            },
         },
 
     ],
@@ -111,6 +119,7 @@ barba.init({
             namespace: "umass",
             afterEnter(data) {
                 umass.init(data.next.container)
+                backButton.goBack(data.next.container)
             }
         },
         {
@@ -118,33 +127,36 @@ barba.init({
             afterEnter(data) {
                 umass.random(data.next.container)
                 dropdowns.index(data.next.container)
-
             }
         },
         {
             namespace: "mapt",
             beforeEnter(data) {
                 map.init(data.next.container, [-72.5301, 42.3868], true, false, 'umass')
+                backButton.goBack(data.next.container)
             }
         },
         {
             namespace: "uiuc",
             afterEnter(data) {
                 umass.init(data.next.container)
+                backButton.goBack(data.next.container)
             }
         },
         {
             namespace: "rpi",
             afterEnter(data) {
                 umass.init(data.next.container)
+                backButton.goBack(data.next.container)
             }
         },
         {
             namespace: "riskcalc",
-            beforeEnter(data) {
+            afterEnter(data) {
                 map.init(data.next.container, [-72.5301, 42.3868], true, true, 'umass')
                 riskcalc.submitButton(data.next.container, 'umass')
                 riskcalc.init(data.next.container.querySelector("#myInput"),buildingNames.getNames('umass'))
+                backButton.goBack(data.next.container)
             }
         }
 

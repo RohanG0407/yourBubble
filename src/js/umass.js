@@ -2,22 +2,83 @@ import "../styling/umass.scss"
 import "./barba-trans"
 import "mapbox-gl/dist/mapbox-gl.css"
 import {gsap} from "gsap"
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/database";
 
 export class umass {
     static init(data) {
+        var firebaseConfig = {
+            apiKey: "AIzaSyAbOR9H_82urCsl6tSBP656BH_7Qrndfa8",
+            authDomain: "yourbubble-69f44.firebaseapp.com",
+            databaseURL: "https://yourbubble-69f44-default-rtdb.firebaseio.com/",
+            projectId: "yourbubble-69f44",
+            storageBucket: "yourbubble-69f44.appspot.com",
+            messagingSenderId: "21338274072",
+            appId: "1:21338274072:web:11a488a3846fd5713c066d",
+            measurementId: "G-KSR6M7XC12"
+        };
+
+// Get a reference to the database service
+        var database = firebase.database()
         let mapicon = data.querySelector(".mapbutton")
         let riskicon = data.querySelector(".riskcalcbutton")
         let timerate = data.querySelector(".timedrophover")
 
+        let college = ''
+        if(document.title == "UMass Amherst") {
+            college = 'umass'
+        } else if(document.title == "UIUC") {
+            college = 'uiuc'
+        } else {
+            college = 'rpi'
+        }
+
+        let starCountRef = firebase.database().ref('coviddata/' + college);
+        starCountRef.on('value', (snapshot) =>{
+            let numElement = data.querySelector('#rate')
+            let snap = snapshot.val();
+            console.log(snap)
+            numElement.innerHTML = snap['7 Day Average']
+        });
+        timerate.innerHTML = "in the last 7 days";
+
 
         timerate.addEventListener('click', () => {
+            let college = ''
+            if(document.title == "UMass Amherst") {
+                college = 'umass'
+            } else if(document.title == "UIUC") {
+                college = 'uiuc'
+            } else {
+                college = 'rpi'
+            }
+            if (firebase.apps.length === 0) {
+                firebase.initializeApp(firebaseConfig);
+            }
             if (timerate.innerHTML === "in the last 7 days") {
+                let starCountRef = firebase.database().ref('coviddata/' + college);
+                starCountRef.on('value', (snapshot) =>{
+                    let numElement = data.querySelector('#rate')
+                    let snap = snapshot.val();
+                    console.log(snap)
+                    numElement.innerHTML = snap['Cumulative Average']
+                });
                 timerate.innerHTML = "cumulatively";
             } else {
+                let starCountRef = firebase.database().ref('coviddata/' + college);
+                starCountRef.on('value', (snapshot) =>{
+                    let numElement = data.querySelector('#rate')
+                    let snap = snapshot.val();
+                    console.log(snap)
+                    numElement.innerHTML = snap['7 Day Average']
+                });
                 timerate.innerHTML = "in the last 7 days"
             }
 
         })
+
+
 
 
 

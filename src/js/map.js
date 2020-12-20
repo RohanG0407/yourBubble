@@ -53,9 +53,14 @@ export class map {
             submitButton.addEventListener('submit', (e) => {
                 e.preventDefault();
                 let text = data.querySelector('#myInput').value
+
                 for(let i = 0; i < json.features.length; i++) {
                     let name = json.features[i].properties.name
                     if(name === text) {
+                        let riskScore = data.querySelector('#riskScore')
+                        riskScoreData.innerHTML = ""
+                        var butt = document.createTextNode(json.features[i].properties.covidIndex)
+                        riskScoreData.appendChild(butt);
                         let center = json.features[i].geometry.coordinates
                         map.flyTo({
                             center: center,
@@ -159,7 +164,9 @@ export class map {
                 var coordinates = e.features[0].geometry.coordinates.slice();
                 var name = e.features[0].properties.name;
                 var category = e.features[0].properties.category;
-                var desc = "<p class='name'>" + name + "</p>" + "<p class='category'>" + "Building Type: " + category + "</p>";
+                var covidIndexScore = e.features[0].properties.covidIndex;
+                var desc = "<p class='name'>" + name + "</p>" + "<p class='category'>" + "Building Type: " + category + "</p>" +
+                    "<p class='indexScore'>" + "Covid Risk Score: " + covidIndexScore + "</p>";
 
 // Ensure that if the map is zoomed out such that multiple
 // copies of the feature are visible, the popup appears

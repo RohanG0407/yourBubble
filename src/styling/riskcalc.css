@@ -22,6 +22,7 @@ html, body {
   top: 2%;
   left: 1%;
   z-index: 10;
+  cursor: pointer;
 }
 
 .mapbutton {
@@ -82,7 +83,6 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  top: 31%;
   font-size: 3rem;
   color: darkblue;
   left: -25%;
@@ -94,17 +94,31 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  top: 31%;
   font-size: 3rem;
   color: darkblue;
   left: 23%;
+}
+
+#riskScore {
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  font-size: 3em;
+  color: darkblue;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.headers {
+  top: 31%;
+  display: inline-block;
 }
 
 #buildingForm {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 20%;
+  top: 25%;
 }
 
 #buildingInfo {

@@ -1,4 +1,5 @@
 @import "common";
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 
 #mapbig {
   width: 100%;
@@ -6,17 +7,24 @@
 }
 
 .popup {
-  font-family: Vollkorn, serif;
+  font-family: Londrina Solid, cursive;
   text-align: center;
 }
 
 .name {
   font-weight: bold;
-  color: orange;
-  font-size: 1rem;
+  color: black;
+  font-size: 1.5rem;
 }
 
 .category {
   font-weight: lighter;
-  color: black;
+  color: darkblue;
+  font-size: 1rem;
+}
+
+.indexScore {
+  font-weight: bold;
+  color: red;
+  font-size: 1rem;
 }
