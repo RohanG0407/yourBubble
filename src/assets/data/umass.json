@@ -1,0 +1,226 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -72.5272672711641,
+          42.38748915130941
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Herter Cafe",
+        "category": "Cafe",
+        "sqft": 1000,
+        "currentCount": 4,
+        "positiveCases": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.52969052842823,
+          42.382891923547646
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Hampden Dining Common",
+        "category": "Dining Hall",
+        "sqft": 3000,
+        "currentCount": 91,
+        "positiveCases": 3
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.52999432220527,
+          42.38194397165398
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Berkshire Dining Common",
+        "category": "Dining Hall",
+        "sqft": 3500,
+        "currentCount": 46,
+        "positiveCases": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.52432564418054,
+          42.39359122927837
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Worcester Dining Common",
+        "category": "Dining Hall",
+        "sqft": 3500,
+        "currentCount": 20,
+        "positiveCases": 1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.53049399999938,
+          42.383850075195454
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Hampshire Dining Common",
+        "category": "Dining Hall",
+        "sqft": 3500,
+        "currentCount": 51,
+        "positiveCases": 4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.5334005423273,
+          42.389519165045186
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "UMass Concessions",
+        "category": "Cafe",
+        "sqft": 1045,
+        "currentCount": 18,
+        "positiveCases": 1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.53158365157182,
+          42.38875705982187
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Recreation Center",
+        "category": "Gym",
+        "sqft": 120000,
+        "currentCount": 180,
+        "positiveCases": 4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.52822669577084,
+          42.38984460764462
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "WEB Du Bois Library",
+        "category": "Library",
+        "sqft": 310000,
+        "currentCount": 310,
+        "positiveCases": 5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.53048009768551,
+          42.38635463688138
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Boyden Gym",
+        "category": "Gym",
+        "sqft": 40000,
+        "currentCount": 119,
+        "positiveCases": 3
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.53405559497037,
+          42.386633964991944
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "South Athletic Field",
+        "category": "Park",
+        "sqft": 40000,
+        "currentCount": 190,
+        "positiveCases": 7
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.52249900000018,
+          42.3892601517567
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Franklin Dining Commons",
+        "category": "Dining Hall",
+        "sqft": 20000,
+        "currentCount": 81,
+        "positiveCases": 9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.52822574470515,
+          42.38717826364656
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Curry Hicks Cage",
+        "category": "Gym",
+        "sqft": 10000,
+        "currentCount": 27,
+        "positiveCases": 1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -72.52686081349277,
+          42.39177084761312
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Campus Center",
+        "category": "Dining Hall",
+        "sqft": 108000,
+        "currentCount": 69,
+        "positiveCases": 2
+      }
+    }
+  ]
+}

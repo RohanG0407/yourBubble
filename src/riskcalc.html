@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="">
+    <title>Risk Calculator</title>
+</head>
+<body>
+    <div data-barba="wrapper" id="screen">
+        <div data-barba="container" data-barba-namespace="riskcalc" id="unique-contents">
+            <a href="#">
+                <img class="backbutton" src="./assets/back.png"></img>
+            </a>
+            <h1 id='headerform'>Covid Risk Calculator</h1>
+            <h3 id='infoheader'>Information</h3>
+            <h3 id='mapheader'>Map</h3>
+            <label></label>
+            <form id='buildingForm' autocomplete="off" action="#">
+                <div class="autocomplete">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Enter a building name">
+                </div>
+                <input type="submit">
+            </form>
+            <div id="buildingInfo">
+                <p id='buildingname'>
+                    <span id="name">Building Name: </span>
+                    <span id="toAppend1"> </span>
+                </p>
+                <p id='buildingtype'>
+                    <span id='type'>Building Type: </span>
+                    <span id="toAppend2"> </span>
+                </p>
+                <p id='buildingsqft'>
+                    <span id='sqft'>Building Sqft: </span>
+                    <span id="toAppend3"> </span>
+                </p>
+                <p id='currentcount'>
+                    <span id='count'>Current Count: </span>
+                    <span id="toAppend4"> </span>
+                </p>
+                <p id='positivecases'>
+                    <span id='cases'>Positive cases in past 14 days: </span>
+                    <span id="toAppend5"> </span>
+                </p>
+            </div>
+            <div id="mapsmall">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

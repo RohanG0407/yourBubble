@@ -1,0 +1,226 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UIUC Main Library",
+        "category": "Library",
+        "sqft": 15000,
+        "currentCount": 50,
+        "positiveCases": 1
+      },
+      "geometry": {
+        "coordinates": [
+          -88.228999,
+          40.104706
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Quad",
+        "category": "Park",
+        "sqft": 20000,
+        "currentCount": 100,
+        "positiveCases": 2
+      },
+      "geometry": {
+        "coordinates": [
+          -88.227169,
+          40.102787
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "activities and recreation center (ARC)",
+        "category": "Gym",
+        "sqft": 340000,
+        "currentCount": 180,
+        "positiveCases": 7
+      },
+      "geometry": {
+        "coordinates": [
+          -88.236051,
+          40.100647
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Main Quad",
+        "category": "Park",
+        "sqft": 183000,
+        "currentCount": 150,
+        "positiveCases": 2
+      },
+      "geometry": {
+        "coordinates": [
+          -88.227222,
+          40.107604
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "illinois street residence (ISR)",
+        "category": "Dining Hall",
+        "sqft": 5000,
+        "currentCount": 30,
+        "positiveCases": 1
+      },
+      "geometry": {
+        "coordinates": [
+          -88.221017,
+          40.10985
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pennsylvania avenue residence (PAR)",
+        "category": "Dining Hall",
+        "sqft": 4000,
+        "currentCount": 28,
+        "positiveCases": 1
+      },
+      "geometry": {
+        "coordinates": [
+          -88.220352,
+          40.099992
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Washington Park",
+        "category": "Park",
+        "sqft": 130000,
+        "currentCount": 76,
+        "positiveCases": 3
+      },
+      "geometry": {
+        "coordinates": [
+          -88.236202,
+          40.107242
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UIUC Undergraduate Library",
+        "category": "Library",
+        "sqft": 100000,
+        "currentCount": 150,
+        "positiveCases": 4
+      },
+      "geometry": {
+        "coordinates": [
+          -88.227239,
+          40.104698
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "florida avenue residence (FAR)",
+        "category": "Dining Hall",
+        "sqft": 5000,
+        "currentCount": 34,
+        "positiveCases": 4
+      },
+      "geometry": {
+        "coordinates": [
+          -88.220931,
+          40.0989
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lincoln Avenue Residence (LAR)",
+        "category": "Dining Hall",
+        "sqft": 13000,
+        "currentCount": 32,
+        "positiveCases": 2
+      },
+      "geometry": {
+        "coordinates": [
+          -88.220665,
+          40.104147
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UIUC Grainger Engineering Library",
+        "category": "Library",
+        "sqft": 200000,
+        "currentCount": 95,
+        "positiveCases": 6
+      },
+      "geometry": {
+        "coordinates": [
+          -88.226863,
+          40.112477
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Campus Recreation Center (CRCE)",
+        "category": "Gym",
+        "sqft": 150000,
+        "currentCount": 67,
+        "positiveCases": 7
+      },
+      "geometry": {
+        "coordinates": [
+          -88.221955,
+          40.104759
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ikenberry Dining Center",
+        "category": "Dining Hall",
+        "sqft": 6000,
+        "currentCount": 20,
+        "positiveCases": 1
+      },
+      "geometry": {
+        "coordinates": [
+          -88.235204,
+          40.103642
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

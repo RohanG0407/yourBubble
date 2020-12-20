@@ -1,0 +1,175 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -73.68590481805518,
+          42.7310907584631
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Blitman Commons",
+        "category": "Dining Hall",
+        "sqft": 8000,
+        "currentCount": 30,
+        "positiveCases": 1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.67928512626465,
+          42.72931754656082
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Mueller Center RPI Gymnasium",
+        "category": "Gym",
+        "sqft": 100000,
+        "currentCount": 75,
+        "positiveCases": 5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.67828180210971,
+          42.731573119929465
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Anderson Field",
+        "category": "Park",
+        "sqft": 80000,
+        "currentCount": 15,
+        "positiveCases": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.68262064285199,
+          42.72935962361157
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Folsom Library",
+        "category": "Library",
+        "sqft": 7000,
+        "currentCount": 40,
+        "positiveCases": 2
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.67883451514733,
+          42.7307203583498
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "87 Gym",
+        "category": "Gym",
+        "sqft": 50000,
+        "currentCount": 50,
+        "positiveCases": 4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.67438723463306,
+          42.72797938577094
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Commons Dining Hall",
+        "category": "Dining Hall",
+        "sqft": 10000,
+        "currentCount": 29,
+        "positiveCases": 2
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.67994477170261,
+          42.73032006521825
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "86 Field",
+        "category": "Park",
+        "sqft": 65000,
+        "currentCount": 20,
+        "positiveCases": 2
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.67662437485471,
+          42.72996378969276
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Student Union",
+        "category": "Dining Hall",
+        "sqft": 10000,
+        "currentCount": 37,
+        "positiveCases": 2
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.67823370032819,
+          42.72979040801454
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Russell Sage Dining Hall",
+        "category": "Dining Hall",
+        "sqft": 10000,
+        "currentCount": 25,
+        "positiveCases": 1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -73.68117340141484,
+          42.73001107544488
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Architecture Library",
+        "category": "Library",
+        "sqft": 10000,
+        "currentCount": 49,
+        "positiveCases": 3
+      }
+    }
+  ]
+}

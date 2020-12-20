@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Londrina Shadow, cursive;
+  color: black;
+  margin: 0;
+  padding: 0;
+
+}
+
+#screen {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/website_background.jpg");
+}
+
+.backbutton{
+  width: 80px;
+  height: 40px;
+  position: fixed;
+  top: 2%;
+  left: 1%;
+  z-index: 10;
+}
+
+.mapbutton {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: fixed;
+  cursor: pointer;
+  margin-top: 5%;
+  right: 15%;
+  opacity: .5;
+}
+
+.riskcalcbutton {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 5%;
+  left: 15%;
+  opacity: .5;
+
+}
+
+.mapheader {
+  right: 24%;
+  position: fixed;
+}
+
+.riskcalcheader {
+  position: fixed;
+  left: 24%;
+}
+
