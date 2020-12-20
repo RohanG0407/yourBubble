@@ -74,13 +74,13 @@ barba.init({
             },
 
         },
-        /*{
+        {
             name: "general-transitions",
             leave: ({current}) => pageToRiskLeave(current.container),
             enter(data){
                 pageToRiskEnter(data.next);
             },
-        },*/
+        },
         {
             name: "toMap",
             from: {
@@ -165,6 +165,8 @@ barba.init({
                     riskcalc.submitButton(data.next.container, "rpi")
                     riskcalc.init(data.next.container.querySelector("#myInput"),buildingNames.getNames('rpi'))
                 }
+
+                backButton.goBack(data.next.container);
             }
         }
 

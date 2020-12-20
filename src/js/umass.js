@@ -34,14 +34,14 @@ export class umass {
             college = 'rpi'
         }
 
-        /*let starCountRef = firebase.database().ref('coviddata/' + college);
+        let starCountRef = firebase.database().ref('coviddata/' + college);
         starCountRef.on('value', (snapshot) =>{
             let numElement = data.querySelector('#rate')
             let snap = snapshot.val();
             console.log(snap)
             numElement.innerHTML = snap['7 Day Average']
         });
-        timerate.innerHTML = "in the last 7 days"; */
+        timerate.innerHTML = "in the last 7 days";
 
 
         timerate.addEventListener('click', () => {
