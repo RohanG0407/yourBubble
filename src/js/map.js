@@ -27,21 +27,6 @@ var database = firebase.database()
 export class map {
     static init(data, center, interactive, small, college) {
         var json = require('../assets/data/' + college + '.json')
-        var starCountRef = firebase.database().ref('buildings/' + college);
-        starCountRef.on('value', (snapshot) =>{
-            let data = snapshot.val();
-            let keys = Object.keys(data)
-            //console.log(keys)
-            for(let i = 0; i < keys.length; i++) {
-                //console.log(json.features[i].properties)
-                let name = json.features[i].properties.name
-                //console.log(data["Ikenberry Dining Center"])
-                json.features[i].properties.covidIndex = data[name]
-                //onsole.log(json.features[i].properties)
-                //map.fire("load")
-
-            }
-        });
 
 
         //var covidData = readData('buildings/' + college)
@@ -186,6 +171,22 @@ export class map {
             });
 
 
+        });
+
+        var starCountRef = firebase.database().ref('buildings/' + college);
+        starCountRef.on('value', (snapshot) =>{
+            let data = snapshot.val();
+            let keys = Object.keys(data)
+            //console.log(keys)
+            for(let i = 0; i < keys.length; i++) {
+                //console.log(json.features[i].properties)
+                let name = json.features[i].properties.name
+                //console.log(data["Ikenberry Dining Center"])
+                json.features[i].properties.covidIndex = data[name]
+                //onsole.log(json.features[i].properties)
+                //map.fire("load")
+
+            }
         });
 
 

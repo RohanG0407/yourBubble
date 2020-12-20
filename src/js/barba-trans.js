@@ -35,12 +35,9 @@ barba.init({
             once: import("./rpi")
         },
         {
-          name: "first-riskcalc",
-          namespace: "riskcalc",
-          once: import("./riskcalc"),
-            after(data) {
-
-            }
+            name: "first-riskcalc",
+            namespace: "riskcalc",
+            once: import("./riskcalc"),
         },
         {
             name: "first-map",
@@ -48,7 +45,6 @@ barba.init({
             once: import("./map")
         },
         {
-            name: "toRiskCalc",
             from: {
                 namespace: [
                     "umass",
@@ -60,6 +56,7 @@ barba.init({
                 namespace: "riskcalc"
             },
             afterEnter(data) {
+                console.log("hello")
                 let prevPage = data.current.container.getElementsByTagName('label')[0].textContent
                 if (prevPage === 'UIUC') {
                     map.init(data.next.container, [-88.2272, 40.1020], true, true, 'uiuc')
@@ -77,13 +74,13 @@ barba.init({
             },
 
         },
-        {
+        /*{
             name: "general-transitions",
             leave: ({current}) => pageToRiskLeave(current.container),
             enter(data){
                 pageToRiskEnter(data.next);
             },
-        },
+        },*/
         {
             name: "toMap",
             from: {
@@ -132,7 +129,7 @@ barba.init({
         {
             namespace: "mapt",
             beforeEnter(data) {
-                map.init(data.next.container, [-72.5301, 42.3868], true, false, 'umass')
+                //map.init(data.next.container, [-72.5301, 42.3868], true, false, 'umass')
                 backButton.goBack(data.next.container)
             }
         },
@@ -152,11 +149,22 @@ barba.init({
         },
         {
             namespace: "riskcalc",
-            afterEnter(data) {
-                map.init(data.next.container, [-72.5301, 42.3868], true, true, 'umass')
-                riskcalc.submitButton(data.next.container, 'umass')
-                riskcalc.init(data.next.container.querySelector("#myInput"),buildingNames.getNames('umass'))
-                backButton.goBack(data.next.container)
+            beforeEnter(data) {
+                console.log("works")
+                let prevPage = data.current.container.getElementsByTagName('label')[0].textContent
+                if (prevPage === 'UIUC') {
+                    map.init(data.next.container, [-88.2272, 40.1020], true, true, 'uiuc')
+                    riskcalc.submitButton(data.next.container, "uiuc")
+                    riskcalc.init(data.next.container.querySelector("#myInput"),buildingNames.getNames('uiuc'))
+                } else if (prevPage === 'UMass Amherst') {
+                    map.init(data.next.container, [-72.5301, 42.3868], true, true, 'umass')
+                    riskcalc.submitButton(data.next.container, "umass")
+                    riskcalc.init(data.next.container.querySelector("#myInput"),buildingNames.getNames('umass'))
+                } else {
+                    map.init(data.next.container, [-73.6789, 42.7298], true, true, 'rpi')
+                    riskcalc.submitButton(data.next.container, "rpi")
+                    riskcalc.init(data.next.container.querySelector("#myInput"),buildingNames.getNames('rpi'))
+                }
             }
         }
 
